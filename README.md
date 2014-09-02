@@ -75,10 +75,10 @@ Plugin to help developers make better analytical tools
 				otherwise simply copy and paste the codes : 
 </blockquote>
 ```code
-					&lt;div class="jqplot-target" id="chart1" style="height: 300px; width: 600px; position: relative;"&gt;
-						<div style="text-indent: 5em;">&lt;canvas class="jqplot-base-canvas" style="position: absolute;</div> <div style="text-indent: 5em;">left: 0px; top: 0px;" height="300" width="600" &gt;</div>
-						<div style="text-indent: 5em;">&lt;/canvas&gt;</div>
-					&lt;/div&gt;
+					<div class="jqplot-target" id="chart1" style="height: 300px; width: 600px; position: relative;>;
+						<canvas class="jqplot-base-canvas" style="position: absolute;</div> <div style="text-indent: 5em;">left: 0px; top: 0px;" height="300" width="600" >
+						</canvas>
+					</div>;
 ```
 <blockquote>
 				And that is it. You can now plot any data on the graph with expectation values.
@@ -187,25 +187,25 @@ Plugin to help developers make better analytical tools
 						<td>local</td>
 						<td>float</td>
 						<td>positive non-zero values</td>
-						<td>This is the local constant used to  unify the data. Its default value is set to zero. For more infromation on how to use this see project <a href="http://anantpushkar.com/index.php/welcome/indexing_algo">page</a></td>
+						<td>This is the local constant used to  unify the data. Its default value is set to zero. </td>
 					</tr>
 					<tr>
 						<td>global</td>
 						<td>float</td>
 						<td>positive non-zero values</td>
-						<td>This is the global constant used to  unify the data. Its default value is set to zero. For more infromation on how to use this see project <a href="http://anantpushkar.com/index.php/welcome/indexing_algo">page</a></td>
+						<td>This is the global constant used to  unify the data. Its default value is set to zero. </td>
 					</tr>
 					<tr>
 						<td>scale</td>
 						<td>float</td>
 						<td>positive non-zero values</td>
-						<td>This is the scaling constant used to  unify the data.Its default value is set to one. For more infromation on how to use this see project <a href="http://anantpushkar.com/index.php/welcome/indexing_algo">page</a></td>
+						<td>This is the scaling constant used to  unify the data.Its default value is set to one. </td>
 					</tr>
 					<tr>
 						<td>global_count</td>
 						<td>float</td>
 						<td>positive non-zero values</td>
-						<td>This is the total parameter count till now. By default, it is innitialised to the total sum of the counts in the array of concern. you can set it to the value you desire the function to unify the data with respect to . For more infromation on how to use this see project <a href="http://anantpushkar.com/index.php/welcome/indexing_algo">page</a></td>
+						<td>This is the total parameter count till now. By default, it is innitialised to the total sum of the counts in the array of concern. you can set it to the value you desire the function to unify the data with respect to . </td>
 					</tr>
 				</tbody></table>
 			</div>
