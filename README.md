@@ -30,6 +30,8 @@ Plugin to help developers make better analytical tools
 			<div class="page-header">
 				<h1>
 					Class Reference
+					</h1>
+<h3>
 					<small>Doing it in the OOP way</small>
 				</h1>
 				
