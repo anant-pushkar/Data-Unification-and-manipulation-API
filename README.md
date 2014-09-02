@@ -25,12 +25,7 @@ Plugin to help developers make better analytical tools
 				The scope for appilcation is vast .
 				<br>
 				<br>
-				To know more about this project go to the project <a href="http://anantpushkar.com/index.php/welcome/indexing_algo">page</a>.<br>
-				<br>
 				<hr>
-				<div align="center"><a class="btn btn-large btn-primary" onclick="window.open(&#39;http://anantpushkar.com/downloads/analytics_api.zip&#39;);" href="http://anantpushkar.com/index.php/welcome/indexing_algo_api#">
-					Download
-				</a></div>
 			</div>
 			<div class="page-header">
 				<h1>
@@ -50,34 +45,42 @@ Plugin to help developers make better analytical tools
 					  var test_data1 = new data_object();
 				</div>
 				Next you need to pass the data points in the form of an array as shown:
-				<div class="well">
-					 var input_1 = [<br> <div style="text-indent: 5em;">[0.0,85.0],</div>
-					 					<div style="text-indent: 5em;">[10.0,187.4],</div>
-					 					<div style="text-indent: 5em;">[20.0,190.0],</div>
-					 					<div style="text-indent: 5em;">[30.0,191.3],</div>
-					 					<div style="text-indent: 5em;">[40.1,193.5],</div>
-					 					<div style="text-indent: 5em;">[50.0,194.1],</div>
-					 					<div style="text-indent: 5em;">[60.0,195.4]</div>
-					 					 ];
-					 <br>
+</blockquote>
+```code
+					 var input_1 = [[0.0,85.0],
+					 		[10.0,187.4],
+					 		[20.0,190.0],
+					 		[30.0,191.3],
+					 		[40.1,193.5],
+					 		[50.0,194.1],
+					 		[60.0,195.4]
+					 		 ];
+					 
 					 test_data1.data = input_1;
-				</div>
+```
+<blockquote>				
 				Next specify the target id where you wish the graph to be shown : 
-				<div class="well">
+</blockquote>
+```code
 					test_data1.target_id = "chart1";
-				</div>
+```
+<blockquote>
 				Next call plot_data function on onload event of the body :
-				<div class="well">
+</blockquote>
+```code
 					test_data1.plot_data();
-				</div>
+```
+<blockquote>
 				Now place the canvas inside the div with the target id as innitialised in the object where ever you want the graph in the page. You can specify whatever height and width you want the graph to have here , 
 				otherwise simply copy and paste the codes : 
-				<div class="well">
+</blockquote>
+```code
 					&lt;div class="jqplot-target" id="chart1" style="height: 300px; width: 600px; position: relative;"&gt;
 						<div style="text-indent: 5em;">&lt;canvas class="jqplot-base-canvas" style="position: absolute;</div> <div style="text-indent: 5em;">left: 0px; top: 0px;" height="300" width="600" &gt;</div>
 						<div style="text-indent: 5em;">&lt;/canvas&gt;</div>
 					&lt;/div&gt;
-				</div>
+```
+<blockquote>
 				And that is it. You can now plot any data on the graph with expectation values.
 			</div>
 			
@@ -85,31 +88,39 @@ Plugin to help developers make better analytical tools
 				<h3>The "index_object" class</h3>
 				This class is used to unify the data from other data_objects into one index. It can be unnitialised as :
 				<br><br>
-				<div class="well">
+</blockquote>
+```code
 					  var test= new index_object();
-				</div>
+```
+<blockquote>
 				Next you need to add data to this object. This class accepts the data from other data_objects only and does not take a raw array as input. This can be easily done using add function as below :
-				<div class="well">
+</blockquote>
+```code
 					test.add(test_data1);<br>
 	  				test.add(test_data2);
-				</div>
+```
+<blockquote>
 				Now , like the data_object you need to specify the id where the graph must be printed :
-				<div class="well">
+</blockquote>
+```code
 					test.index.target_id = "chart3";
-					<br><br>
+```
+<blockquote>
 					<i>Also, it is worth noting that test.index is another instance of data_object class. So , all methods and variables of data_object class apply to test.index object as well.</i>
 				</div> 
 				Now, you need to calculate the unified values and plot the graph . This is done by make and plot functions respectively.
-				<div class="well">
+</blockquote>
+```code
 					test.make();<br>
 	 				test.plot();<br>
-	 				<br>
+```
+<blockquote>
 	 				<i>
 	 					We could have alternatively called test.index.plot_data(); here to plot the graph. However, the class has its own function to do this task.
 	 				</i>
 				</div>
 				Now very much like data_object class , you need to make a div and a canvas to print the graph . This is done in a similar way as in data_object class.
-				<br><br><br><br><br><br><br><br> 
+				<br><br>
 			</div>
 		</div>
 		<div class="well span10">
