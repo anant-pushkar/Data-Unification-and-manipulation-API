@@ -129,7 +129,7 @@ Plugin to help developers make better analytical tools
 			<div align="center">
 				<table allign="center" border="2px;">
 					<tbody><tr>
-						<th>Property name</th>
+						<th>Property name<i>Refer to wiki for explanation</i></th>
 						<th>Input type</th>
 						<th>Accepted inputs</th>
 						<th>Description</th>
